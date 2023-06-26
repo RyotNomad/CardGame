@@ -21,14 +21,14 @@ public class FiveCardDeckTest {
 	@Test
 	public void testGetDeckFirstCard() {
 		FiveCardDeck deck = new FiveCardDeck();
-		 Card firstCard = new Card(CardRank.TWO, CardSuit.DIAMONDS);
+		 Card firstCard = new Card(CardRank.TWO, CardSuit.HEARTS);
 		 assertEquals(deck.getDeck().get(0),firstCard); 
 	}
 	
 	@Test
 	public void testGetDeckLastCard() {
 		FiveCardDeck deck = new FiveCardDeck();
-		 Card lastCard = new Card(CardRank.KING, CardSuit.HEARTS);
+		 Card lastCard = new Card(CardRank.ACE, CardSuit.SPADES);
 		 assertEquals(deck.getDeck().get(deck.getDeck().size()-1),lastCard); 
 	}
 
